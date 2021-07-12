@@ -1,0 +1,60 @@
+{
+  "name": "autoscout-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "axios": "^0.19.0",
+    "react": "^16.10.2",
+    "react-d3-tree": "^1.15.3",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "typescript": "3.9.3",
+    "react-simple-tree-menu": "^1.1.6",
+    "react-super-treeview": "^0.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "stylelint": "^13.3.2",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-scss": "^3.17.1",
+    "ts-jest": "26.0.0",
+    "tslint": "^6.1.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-react": "5.0.0"
+  },
+  "scripts": {
+    "test:prettier": "prettier -l \"./**/*.{ts,tsx,jsx,js,json}\"",
+    "test:prettier:fix": "prettier --write \"./**/*.{ts,tsx,jsx,js,json}\"",
+    "test:lint:js": "tslint --project .",
+    "test:lint:js:fix": "tslint --project . --fix ",
+    "test:lint:css": "stylelint \"src/**/*.css\" --syntax css",
+    "test:lint:css:fix": "stylelint \"src/**/*.css\" --syntax css --fix",
+    "test:lint": "npm run test:lint:js && npm run test:lint:css",
+    "test:lint:fix": "npm run test:lint:js:fix && npm run test:lint:css:fix",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
